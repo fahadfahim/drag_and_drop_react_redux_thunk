@@ -2,37 +2,114 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  width: 90%;
+  margin: auto;
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container-drag {
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wip {
+  width: 25%;
+  left: 0;
+  top: 10;
+  border: 1px solid;
+}
+
+.todo {
+  width: 25%;
+  left: 0;
+  top: 10;
+  border: 1px solid;
+}
+
+.header {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  background-color: #0e0e0e0e;
+  width: 100%;
+}
+
+.droppable {
+  width: 25%;
+  right: 0;
+  top: 10;
+  border: 1px solid;
+
+}
+
+.work-inprogress {
+  background-color: yellow !important;
+  color: #fff;
+}
+
+.task-complete {
+  background-color: green !important;
+  color: #fff;
+}
+
+.yet-todo {
+  background-color: red !important;
+  color: #fff;
+}
+
+.drag-context {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+}
+
+.draggable {
+  /* width: 100px;
+  height: 100px; */
+  background-color: yellow;
+  margin: 5px auto;
+  line-height: 5em;
+}
+
+.parent-form-div {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin: 25px auto;
 }
 
-.App-link {
-  color: #61dafb;
+.add-input {
+  height: 35px;
+  font-size: 18px;
+  line-height: 20px;
+  margin-right: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-add {
+  font-size: 18px;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+.task-header {
+  background-color: #FF6347;
+  color: #000;
+  width: 100%;
+  padding: 14px 0;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 1px solid;
+}
+
+.in-progress {
+  background-color: yellow;
+}
+
+.done {
+  background-color: green;
+  color: #fff;
+}
+
+.to-do {
+  background-color: red;
+  color: #fff;
 }
